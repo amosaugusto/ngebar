@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import AddDocumentBtn from "@/components/ui/AddDocumentBtn";
+import AddDocumentBtn from "@/components/AddDocumentBtn";
 import { SignedIn, UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
 import Image from "next/image";
@@ -30,7 +30,7 @@ const Home = async () => {
             height={40}
             className="mx-auto"
           />
-          <AddDocumentBtn 
+          <AddDocumentBtn
             userId={clerkUser.id}
             email={clerkUser.emailAddresses[0].emailAddress}
           />
